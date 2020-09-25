@@ -16,14 +16,14 @@ from yolo_based.YoloFinetuneModel import YoloFinetuneModel
 def resnet_recognition(rgb_path, depth_path):
     model = ResnetFinetuneModel('resnet_based/model/SUNRGBD_label2name_19.json')
 
-    scene = model.test(rgb_path, depth_path, 'resnet_based/model/trained_sunrgbd.h5')
+    scene = model.test(rgb_path, depth_path, 'resnet_based/model/resnet_finetune_sunrgbd.h5')
 
     return scene
 
 def yolo_recognition(rgb_path):
     model = YoloFinetuneModel('yolo_based/model_data/yolo4_anchors.txt', 'yolo_based/model_data/sunrgbd_object19scene19_100_classes.txt')
 
-    scene = model.test(rgb_path, 'yolo_based/model_data/trained_sunrgbd.h5')
+    scene = model.test(rgb_path, 'yolo_based/model_data/yolo_finetune_sunrgbd.h5')
 
     return scene
 
