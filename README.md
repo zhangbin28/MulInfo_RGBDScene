@@ -7,12 +7,12 @@ This project provides an implementation for paper "An Efﬁcient RGB-D Scene Rec
 Get trained model and resnet/yolo4 model
 ```
 cd resnet_based/model
-wget ∰
-wget ∰
+wget https://drive.google.com/file/d/1UY7oLao9FqjoSDwOosdIVc3zRRLFAkdK/view?usp=sharing
+wget https://drive.google.com/file/d/1Ivig6aYinOX3schZL6oxCJOSIdMWzRHk/view?usp=sharing
 
 cd ../../yolo_based/model_data
-wget ∰
-wget ∰
+wget https://drive.google.com/file/d/1CHazWNoRYsTNt6AIMKO2dIQG32K9y1wK/view?usp=sharing
+wget https://drive.google.com/file/d/1OXdB1MgresQQvQVTS3hF3k0d2MccO6yn/view?usp=sharing
 ```
 
 Run
